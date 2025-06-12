@@ -1,7 +1,5 @@
 Fuzzing Tool with Cookie Support - Created by chor4o
 
-A robust and efficient tool for directory fuzzing on target URLs, featuring support for custom _cfuvid cookies to bypass Cloudflare’s rate limiting and enhance the effectiveness of endpoint enumeration.
- 
 🚀 Overview
 This tool allows you to perform directory fuzzing on target URLs, sending custom cookies with each request. It is ideal for security testing, endpoint enumeration, and bypassing rate limits on applications protected by Cloudflare with the _cfuvid cookie.
 For more information, see the Cloudflare manual:
