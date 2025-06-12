@@ -19,7 +19,7 @@ https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cl
  
 🛠️ How to Use
 1.	Generate the cookie file:
-python3 coletar_cookie.py -u https://target.example.com
+python3 coletor.py -u https://target.example.com
 
 2.	Prepare the wordlist:
 o	File wordlist.txt with one path per line.
