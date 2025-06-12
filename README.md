@@ -1,4 +1,4 @@
-Fuzzing Tool with Cookie Support - Created by chor4o
+Fuzzing Tool with Cookie Support - By Pass Rate limit -  Created by chor4o
 
 🚀 Overview
 This tool allows you to perform directory fuzzing on target URLs, sending custom cookies with each request. It is ideal for security testing, endpoint enumeration, and bypassing rate limits on applications protected by Cloudflare with the _cfuvid cookie.
