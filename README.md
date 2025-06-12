@@ -1,56 +1,49 @@
 Fuzzing Tool with Cookie Support
-Uma ferramenta simples e eficaz para fuzzing de diretórios em URLs, com suporte a envio de cookies _cfuvid customizados.
-
-🚀 Visão Geral
-Esta ferramenta permite realizar fuzzing de diretórios em URLs alvo, enviando cookies personalizados em cada requisição. Ideal para testes de segurança, enumeração de endpoints e bypass de rate limits em aplicações protegidas com Cloudflare com _cfuvid.
-
-Mais informações ler o manual do cloudflare https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/#_cfuvid-for-rate-limiting-rules
-
-✨ Funcionalidades
-Fuzzing de diretórios: Testa uma lista de palavras em caminhos da URL alvo.
-
-Suporte a cookies: Envia cookies customizados (ex: _cfuvid) em cada requisição.
-
-User-Agent personalizado: Simula navegador mobile para maior stealth.
-
-Headers avançados: Headers de navegador real para evitar detecção.
-
-Delay aleatório: Entre requisições para evitar bloqueio.
-
-Fácil de usar: Interface via linha de comando com parâmetros claros.
-
-📦 Requisitos
-Python 3.x
-
-Biblioteca requests (pip install requests)
-
-🛠️ Como Usar
-Gere o arquivo de cookies:
-
-bash
+A simple and effective tool for directory fuzzing on target URLs, with support for custom _cfuvid cookies.
+ 
+🚀 Overview
+This tool allows you to perform directory fuzzing on target URLs, sending custom cookies with each request. It is ideal for security testing, endpoint enumeration, and bypassing rate limits on applications protected by Cloudflare with the _cfuvid cookie.
+For more information, see the Cloudflare manual:
+https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/#_cfuvid-for-rate-limiting-rules
+ 
+✨ Features
+•	Directory fuzzing: Tests a list of words as paths on the target URL.
+•	Cookie support: Sends custom cookies (e.g., _cfuvid) with each request.
+•	Custom User-Agent: Simulates a mobile browser for increased stealth.
+•	Advanced headers: Uses real browser headers to avoid detection.
+•	Random delay: Between requests to prevent blocking.
+•	Easy to use: Command-line interface with clear parameters.
+ 
+📦 Requirements
+•	Python 3.x
+•	requests library (pip install requests)
+ 
+🛠️ How to Use
+1.	Generate the cookie file:
 python3 coletar_cookie.py -u https://target.example.com
-Prepare a wordlist:
 
-Arquivo wordlist.txt com um caminho por linha.
-
-Execute o fuzzing:
-
-bash
+2.	Prepare the wordlist:
+o	File wordlist.txt with one path per line.
+3.	Run the fuzzing:
 python3 fuzzing.py -u https://target.example.com -w wordlist.txt -c cookie.txt
-📝 Parâmetros
-Parâmetro	Descrição
--u	URL base para teste
--w	Arquivo wordlist para fuzzing
--c	Arquivo de cookie(s) para enviar
-📄 Exemplo de Saída
-text
+
+ 
+📝 Parameters
+Parameter	Description
+-u	Base URL to test
+-w	Wordlist file for fuzzing
+-c	Cookie file to send
+
+ 
+📄 Example Output
 [+] https://target.example.com/admin => 200
 [+] https://target.example.com/config => 403
-📜 Licença
-Este projeto está licenciado sob a MIT License.
 
-🤝 Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
-
-Fique à vontade para copiar, modificar e usar conforme suas necessidades!
-Se precisar de um logo ou de mais informações, é só pedir!
+ 
+📜 License
+This project is licensed under the MIT License.
+ 
+🤝 Contributions
+Contributions are welcome! Feel free to open issues or pull requests.
+ 
+Feel free to copy, modify, and use as needed!
